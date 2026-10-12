@@ -1,0 +1,37 @@
+item,value,unit,report_page,note
+valuation_date,31/12/2025,date,185,IAS 19 year end
+discount_rate_past_service,5.5,% pa,185,UK schemes; use this for the DBO (future service rate is 5.8%)
+rpi_inflation,2.5,% pa,185,UK
+cpi_inflation,2,% pa,185,Implied by CPI-linked deferred revaluation assumption (2.0% CPI / 2.5% RPI)
+salary_increases,2.5,% pa,185,UK
+deferred_revaluation_cpi_rpi,2.0 / 2.5,% pa,185,CPI-linked / RPI-linked tranches
+pension_increases_in_payment,1.6 - 3.5,% pa,185,Range across benefit tranches (caps and floors differ)
+e65_male_aged_65_now,86 - 89,age at death,185,Range across UK schemes; cohort basis incl. improvements; i.e. 21-24 years remaining
+e65_female_aged_65_now,88 - 91,age at death,185,i.e. 23-26 years remaining
+e65_male_aged_45_now,87 - 90,age at death,185,Life expectancy at 65 for someone currently 45
+e65_female_aged_45_now,89 - 92,age at death,185,
+mortality_base_table,SAPS S3 (year of birth) with scheme experience adjustments,text,185,
+mortality_improvements,CMI_2024; long-term rate 1.0% pa; A = 0.2%,text,185,
+uk_dbo_total,15827,GBP m,191,Funded 15738 + unfunded 89 (p187)
+uk_assets,17356,GBP m,187,
+uk_gross_surplus,1529,GBP m,187,Before 25% withholding tax; net surplus 1125
+uk_ias19_funding_level,109.7,%,187,Assets / DBO (calculated)
+main_scheme_share_of_uk_dbo,93,%,182,Main Scheme ~ GBP 14.7bn of DBO (calculated)
+uk_duration,11,years,182,2024: 12 years; US: 10 years
+uk_benefits_paid_2025,1047,GBP m,191,Year-1 cashflow check for the model
+uk_current_service_cost_2025,60,GBP m,191,Small relative to DBO: few active members accruing
+membership_split,not disclosed,,184,Main Scheme pensions in payment = 'just over half' of liabilities
+sens_discount_+0.5pp,-1,GBP bn DBO,193,Scope not stated; arithmetic fits group-wide (UK+US) better than UK-only
+sens_discount_-0.5pp,1,GBP bn DBO,193,
+sens_discount_+1.0pp,-1.8,GBP bn DBO,193,
+sens_discount_-1.0pp,2.2,GBP bn DBO,193,Asymmetry = convexity
+sens_inflation_+0.1pp,0.1,GBP bn DBO,193,
+sens_inflation_-0.1pp,-0.1,GBP bn DBO,193,
+sens_inflation_+0.5pp,0.5,GBP bn DBO,193,
+sens_inflation_-0.5pp,-0.5,GBP bn DBO,193,
+sens_life_expectancy_+1yr,-0.6,GBP bn net surplus,193,NET surplus incl. longevity swap offset; gross DBO impact will be larger
+sens_life_expectancy_-1yr,0.6,GBP bn net surplus,193,
+sens_assets_discount_+0.5pp / -0.5pp,-0.909090909,GBP bn assets,193,Assets move almost 1:1 with DBO (rates hedged)
+sens_assets_discount_+1.0pp / -1.0pp,-0.826086957,GBP bn assets,193,
+sens_assets_inflation_+0.5pp / -0.5pp,-1.166666667,GBP bn assets,193,Assets move more than DBO
+funding_valuation_main_scheme_2024-03-31,assets 19.2 / liabilities 18.4 / 104%,GBP bn,183,Triennial funding basis (more prudent than IAS 19)
